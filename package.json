@@ -11,10 +11,7 @@
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "data:import": "node backend/seeder.js",
     "data:destroy": "node backend/seeder.js -d",
-     "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
-   
-
-
+    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
   },
   "author": "JOSIA NJIDILE",
   "license": "ISC",
@@ -33,6 +30,7 @@
     "react-toastify": "^10.0.6"
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "concurrently": "^9.0.1"
   }
 }
